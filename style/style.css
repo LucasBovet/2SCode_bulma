@@ -116,16 +116,19 @@ a:hover{
 /*------------------------------------ FORM ------------------------------------*/
 
 .form_container{
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 /*------------------------------------ RESPONSIVE ------------------------------------*/
 
 @media (min-width: 320px) and (max-width: 940px){
-    .navbar-brand{
+    .navbar{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     
 }
