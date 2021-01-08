@@ -130,5 +130,19 @@ a:hover{
         flex-direction: column;
         align-items: center;
     }
+
+    .container_img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .container_img img{
+        margin-bottom: 50px;
+    }
+
+  
     
 }
+
