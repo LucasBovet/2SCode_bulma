@@ -1,7 +1,7 @@
 <?php
-session_start(); //beginning of the session
+session_start(); //demarage de la session
 
-$page = isset($_GET["page"]) ? $_GET["page"] : "home";
+$page = isset($_GET["page"]) ? $_GET["page"] : "home"; //routage des pages
 
 if (!file_exists($page . '.php')) {
   $page = '404';

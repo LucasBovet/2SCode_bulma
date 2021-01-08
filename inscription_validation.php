@@ -29,7 +29,7 @@
 
                     $res = $req->fetch(PDO::FETCH_ASSOC); //verifie dans la base de donnée que l'email n'est pas déja utilisé
 
-                    if ($res['nbrUsers'] == 0) { 
+                    if ($res['nbrUsers'] == 0) { //verification que l'email n'est pas déja utilisé
                         if ($password === $passwordRe) { //verification que les mots de passes soyent identiques
                             $req = $sql_connection->prepare('INSERT INTO users ( firstname, lastname, date_of_birth, mail, password, city) VALUES ( :firstname, :lastname, :date_of_birth, :mail, :password,:city)'); //préparation de la requète SQL 
                             $req->bindValue(':firstname', $firstname); //association des valeurs
