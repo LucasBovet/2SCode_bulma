@@ -24,6 +24,7 @@
                 if(password_verify($_POST['password_connexion'], $res['password'])){ //verification du hachage des mots de passe
 
                     $_SESSION['logged'] = true;
+                    
                     $_SESSION['id'] = $res['id'];
 
                     
