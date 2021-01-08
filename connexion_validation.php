@@ -23,9 +23,8 @@
 
                 if(password_verify($_POST['password_connexion'], $res['password'])){ //verification du hachage des mots de passe
 
-                    $_SESSION['logged'] = true;
-                    
-                    $_SESSION['id'] = $res['id'];
+                    $_SESSION['logged'] = true; //création de session
+                    $_SESSION['id'] = $res['id']; //stockage de l'id dans une variable
 
                     
                     $succes = true; //changement de valeur de la variable de succès
